@@ -17,7 +17,6 @@ set shiftwidth=4
 set tabstop=4
 set noexpandtab
 "expand tabs to the spaces they represent for portability
-"set expandtab
 
 "when writing paired parentheses, flash the matching member of the closure
 set showmatch
@@ -81,6 +80,4 @@ autocmd FileType tex setlocal spell
 autocmd FileType plaintex setlocal spell
 "autocmd FileType latex set formatoptions-=tcq 
 
-set expandtab
-set shiftwidth=2
-set softtabstop=2
+autocmd BufNewFile,BufRead *.nf set filetype=groovy
